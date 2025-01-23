@@ -22,26 +22,37 @@ In other words if you place a window at any point in the time series the statist
 
 p(Yt1) = p(Yt)
 
-meaning the distribution p(Yt1) is the same as any other distribution, p(Yt).  In other words if Yt is identically distributed then Yt is constant over time.
+What this means is that the distribution p(Yt1) is the same as any other distribution, p(Yt).  In other words if Yt is identically distributed then Yt is constant over time.
 
 #### Independence
-This is a process is independent when it constituent random variables (Yt) are mutually independent.
+A process is independent when it's constituent random variables (Yt) are mutually independent, where:
 
 p(Y1, Y2,...YT),
 
-meaning that the joint probability of the entire stochastic process equals the product of the marginal probabilities across time. 
+this means that the joint probability of the entire stochastic process equals the product of the marginal probabilities across time. 
 
-Forcasting an independent process can be difficult being the past values do not influence current or future values.
+Forcasting an independent process can be difficult being that the past values do not influence current or future values, as shown in the following formula:
 
 p(Yt|Yt-1, Yt-2, ...) = p(Yt)
 
+#### IDD
 A stochastic process can be stationary, independent or both.  When its both it is referred to as being "Independent and Identically Distributed" or IID.
-An example of this is the Gaussian White Noise process where, every distribution of Yt has mean of 0 and a variance of 1.
+An example of this is the Gaussian White Noise process where, every distribution of Yt has a mean of 0 and a variance of 1.
 
 #### Autocorrelation Matrix
 This is a method for finding the correlation between two different time instances in the same stochastic process (Yt).
 
-An example of an autocorrelation matrix for a stochastic process could be a matrix representing the correlations between different time points of a stationary time series like stock prices, where each element in the matrix represents the correlation between a pair of observations separated by a specific time lag, with the diagonal elements being the variance of the process itself; for instance, if you have a time series with 5 observations, the autocorrelation matrix would be a 5x5 matrix where the element at row 1, column 2 would represent the correlation between the first and second observation, and so on. 
+An example of an autocorrelation matrix for a stochastic process could be a matrix representing the correlations between different time points of a stationary time series like stock prices, where each element in the matrix represents the correlation between a pair of observations separated by a specific time lag, with the diagonal elements being the variance of the process itself; for instance, if you have a time series with 5 observations, the autocorrelation matrix would be a 5x5 matrix where the element at row 1, column 2 would represent the correlation between the first and second observation, and so on.  The following is an example of sucha a matrix:
+    [  1   a   a^2  a^3  a^4 ]
+
+    [  a   1   a   a^2  a^3 ]
+
+    [  a^2  a   1   a   a^2 ]
+
+    [  a^3  a^2  a   1   a  ]
+
+    [  a^4  a^3  a^2  a   1 ]
+
 
 - Key points about the autocorrelation matrix:
   - Structure:
