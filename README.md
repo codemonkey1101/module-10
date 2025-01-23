@@ -39,4 +39,17 @@ A stochastic process can be stationary, independent or both.  When its both it i
 An example of this is the Gaussian White Noise process where, every distribution of Yt has mean of 0 and a variance of 1.
 
 #### Autocorrelation Matrix
-This is a method for finding the corretion between two different time instances in the same stochastic process (Yt).
+This is a method for finding the correlation between two different time instances in the same stochastic process (Yt).
+
+An example of an autocorrelation matrix for a stochastic process could be a matrix representing the correlations between different time points of a stationary time series like stock prices, where each element in the matrix represents the correlation between a pair of observations separated by a specific time lag, with the diagonal elements being the variance of the process itself; for instance, if you have a time series with 5 observations, the autocorrelation matrix would be a 5x5 matrix where the element at row 1, column 2 would represent the correlation between the first and second observation, and so on. 
+
+- Key points about the autocorrelation matrix:
+  - Structure:
+    Due to the nature of autocorrelation, the matrix will be symmetric, with the same values on the diagonal mirrored across the main diagonal. 
+  - Interpretation:
+    A high value at a specific lag indicates a strong correlation between observations separated by that time lag, suggesting a trend or pattern in the data. 
+- Important considerations:
+  - Stationarity:
+    The autocorrelation matrix is most meaningful when dealing with a stationary stochastic process, where the statistical properties (like mean and variance) are constant over time. 
+  - Lag selection:
+    The number of lags considered in the matrix depends on the analysis goal and the characteristics of the data. 
