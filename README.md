@@ -83,7 +83,7 @@ An example of an autocorrelation matrix for a stochastic process could be a matr
 - Stationary processes: with regards to modeling are not necessarily white any contain structure in the form of the autocorrelation function.
 
 The forumla that is used in this example to forcast long-term behavior is: 
-Y(t-h:t) : the vector Y from t - (t to h)  where the signal (y) = t + C + s + r.  The behaviors that are tracked in this formula are as follows:
+Y(t-h:t) : the vector Y from t - (t to h)  where the signal (y) = t + c + s + r.  The behaviors that are tracked in this formula are as follows:
 
 t: Trend: long term behavior
 c: Cycles: Random low frequency variations
