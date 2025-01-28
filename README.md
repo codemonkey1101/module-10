@@ -120,6 +120,3 @@ Sometimes notated as ARIMA, stands for autoregressive integrated moving average 
 - Moving average: A model based on the dependence between an observation and a residual error after applying a moving average model to lagged observations
 
 In short, ARMA is a forecasting model for a stationary time series (i.e., linear regression-type) model in which the predictors consist of lags of the dependent variable and/or lags of the forecasted errors
-
-
-## Quick Reference Guide
