@@ -73,7 +73,7 @@ An example of an autocorrelation matrix for a stochastic process could be a matr
 - It also has a number of datasets that one can use for practice
 
 ### Example using statsmodels and datasets to plot autocorrelations:
-[example-using-statsmodels.ipynb](module-10/edit/main/example-using-statsmodels .ipynb)
+[example-using-statsmodels.ipynb](module-10/edit/main/example-using-statsmodels.ipynb)
 
 ## Modeling Long-Term Time Series
 ### Overview
